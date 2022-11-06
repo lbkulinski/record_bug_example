@@ -9,7 +9,7 @@ import java.util.Map;
 
 @Controller("/api/example")
 public class ExampleController {
-    @Post
+    @Post("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public HttpResponse<?> example(@Valid @RequestBean Bean bean) {
         return HttpResponse.ok(
