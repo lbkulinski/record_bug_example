@@ -17,7 +17,7 @@
         <packaging>jar</packaging>
         <jdk.version>18</jdk.version>
         <release.version>18</release.version>
-        <micronaut.version>3.7.3</micronaut.version>
+        <micronaut.version>3.8.0-SNAPSHOT</micronaut.version>
         <micronaut.runtime>netty</micronaut.runtime>
         <exec.mainClass>com.example.Application</exec.mainClass>
     </properties>
@@ -26,6 +26,16 @@
         <repository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>sonatype-snapshots</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
         </repository>
     </repositories>
 

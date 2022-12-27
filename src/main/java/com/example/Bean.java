@@ -8,5 +8,5 @@ import io.micronaut.http.annotation.PathVariable;
 import javax.validation.constraints.Positive;
 
 @Introspected
-public record Bean(HttpRequest<?> httpRequest, @PathVariable @Nullable @Positive Integer id) {
+public record Bean(HttpRequest<?> httpRequest, @PathVariable @Positive Integer id) {
 }
